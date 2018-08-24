@@ -30,7 +30,7 @@ public class Perro extends Mamifero {
 
 	@Override
 	public String toString() {
-		return "Perro [nombre=" + super.getNombre() +  "raza=" + raza ;
+		return "Perro [nombre=" + super.getNombre() +  "//raza=" + raza ;
 	}
 
 }

@@ -36,4 +36,9 @@ public class Persona extends Mamifero {
 		return null;
 	}
 
+	@Override
+	public String toString() {
+		return "Persona [nacionalidad=" + nacionalidad + "]";
+	}
+
 }
