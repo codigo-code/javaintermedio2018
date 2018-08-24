@@ -29,5 +29,8 @@ public class Perro extends Mamifero {
 	public void setRaza(String raza) {
 		this.raza = raza;
 	}
-
+public String toString () {
+	return "Perro [nombre " + super.getNombre() + " , raza= " + raza;
+	
+}
 }
