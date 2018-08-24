@@ -26,6 +26,30 @@ public class Persona extends Mamifero {
 	public void setNacionalidad(String nacionalidad) {
 		this.nacionalidad = nacionalidad;
 	}
-	
 
+	@Override
+	public void comunicarse() {
+		System.out.println("Hola soy una persona!");
+		
+	}
+
+	@Override
+	public String dormir(double horas) {
+		if (horas > 10)
+		return "durmio como un bebé";
+		else if (horas < 5 && horas >9) {
+			return "durmio meehhhhh";
+		}else {
+			System.out.println("Durmio como el ogt");
+		}
+		return null;
+	
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nacionalidad=" + nacionalidad + "]";
+	}
+	
+	
 }

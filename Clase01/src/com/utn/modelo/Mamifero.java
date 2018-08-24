@@ -1,6 +1,6 @@
 package com.utn.modelo;
 
-public class Mamifero {
+public abstract class Mamifero {
 	
 	private String nombre;
 	private double peso;
@@ -40,5 +40,18 @@ public class Mamifero {
 		this.altura = altura;
 		this.edad = edad;
 	}
+	
+	//Metodos Abstarctos
+	/*
+	 * Descripcion: un metodo abstracto no esta implementado 
+	 * quiere decir que dicha implementacion se hara en la clase
+	 * extendida (derivada)
+	 */
+	
+	public abstract void comunicarse();
+	
+	//Metodo abstracto puede llevar los parametres que quieran
+	
+	public abstract String dormir(double horas);
 	
 }
