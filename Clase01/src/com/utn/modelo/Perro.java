@@ -14,6 +14,7 @@ public class Perro extends Mamifero {
 		this.raza = raza;
 	}
 
+	
 	@Override
 	public void comunicarse() {
 		System.out.println("Wooof");
@@ -32,5 +33,11 @@ public class Perro extends Mamifero {
 	public void setRaza(String raza) {
 		this.raza = raza;
 	}
+	
+	@Override
+	public String toString() {
+		return "Perro [raza=" + raza + "]";
+	}
+
 
 }
