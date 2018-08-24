@@ -1,0 +1,32 @@
+package com.utn.controlador;
+
+public class MamiferoControlador {
+	
+	public void creoMamifero() {
+		
+		/*
+		 * Creacion de objeto => instancias
+		 * dos conceptos
+		 */
+		
+		  //1)crear el objeto directamente por la clase que queremos o que vamos a utilizar
+
+		 
+		 Persona p1= new Persona ("joaquin", 70.5, 1.70, 27, "Argentino");
+		  
+
+		  //2) por factoria abstracta
+
+		 
+		 Mamifero m1 = new Persona ("Claudia", 50.0, 1.70, 28, "Argentina");
+		 
+
+		  //3)laq ue no vamos a poder
+
+		 
+		  Mamifero m2 = new Mamifero("Flor", 70, 1.40, 50);
+		 
+		
+		
+	}
+}
