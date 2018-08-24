@@ -1,5 +1,6 @@
 package com.utn.controlador;
 
+import com.utn.modelo.Gato;
 import com.utn.modelo.Mamifero;
 import com.utn.modelo.Perro;
 import com.utn.modelo.Persona;
@@ -31,6 +32,10 @@ public class MamiferoControlador {
 		
 		if(tipo.equals("perro")) {
 			m1 = new Perro("boby",30,0.7,5,"bulldog");
+		}
+		
+		if(tipo.equals("gato")) {
+			m1 = new Gato("silvestre",10,0.7,3,"abisinio");
 		}
 		
 		System.out.println(m1);

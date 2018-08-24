@@ -6,7 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		MamiferoControlador mc = new MamiferoControlador();
-		mc.creoMamifero("perro");
+		mc.creoMamifero("gato");
 
 	}
 

@@ -36,7 +36,7 @@ public class Perro extends Mamifero {
 	
 	@Override
 	public String toString() {
-		return "Perro [raza=" + raza + "]";
+		return "Perro: nombre= " + getNombre() + " peso= " + getPeso() + " altura= " + getAltura() + " edad= " + getEdad() + " raza=" + raza + "";
 	}
 
 

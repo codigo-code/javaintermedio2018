@@ -13,17 +13,36 @@ public class Gato extends Mamifero {
 		this.raza=raza;
 		
 	}
+	
+	public String getRaza() {
+		return raza;
+	}
+
+
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+
+
 
 	@Override
 	public void comunicarse() {
-		// TODO Auto-generated method stub
+		System.out.println("Meooouuuu");
 		
 	}
 
 	@Override
 	public String dormir(double horas) {
-		// TODO Auto-generated method stub
-		return null;
+		return "Hizo vida de gato";
 	}
+
+	@Override
+	public String toString() {
+		return "Gato: nombre= " + getNombre() + " peso= " + getPeso() + " altura= " + getAltura() + " edad= " + getEdad() + " raza= " + raza + "";
+//		return "Gato [raza=" + raza + "]";
+	}
+	
+	
 
 }
