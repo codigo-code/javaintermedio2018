@@ -1,9 +1,13 @@
 package com.utn.vista;
 
+import com.utn.contador.AnimalControlador;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		AnimalControlador a = new AnimalControlador();
+		a.crearAnimal("Mamifero");
 
 	}
 

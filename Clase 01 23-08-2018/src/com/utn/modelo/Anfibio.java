@@ -8,17 +8,26 @@ public class Anfibio extends Animal
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public void comunicarse() {
-		// TODO Auto-generated method stub
-		
-	}
+		System.out.println("Hola soy un anfibio");
+			
+		}
+
 
 	@Override
 	public String dormir(double horas) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public String toString() {
+		return "Anfibio [getNombre()=" + getNombre() + ", getPeso()=" + getPeso() + ", getAltura()=" + getAltura()
+				+ ", getEdad()=" + getEdad() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+	
+	
 
 
 }

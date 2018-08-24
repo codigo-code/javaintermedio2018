@@ -20,6 +20,14 @@ public class Mamifero extends Animal {
 		this.cantidadDeMamiferos = cantidadDeMamiferos;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Mamifero [getNombre()=" + getNombre() + ", getPeso()=" + getPeso() + ", getAltura()=" + getAltura()
+				+ ", getEdad()=" + getEdad() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+
 	public void comunicarse() {
 	System.out.println("Hola soy un mamifero");
 		
