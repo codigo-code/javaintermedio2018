@@ -63,6 +63,8 @@ public abstract class Mamifero {
 
 	//Metodo abstracto puede llevar los parametros q quieran
 	public abstract String dormir(double horas);
+	
+	
 
 	@Override
 	public String toString() {
