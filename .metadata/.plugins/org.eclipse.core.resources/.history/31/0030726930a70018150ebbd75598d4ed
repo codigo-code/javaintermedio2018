@@ -1,0 +1,22 @@
+package com.utn.modelo;
+
+/***
+ * 
+ * Persona extiende de la clase Mamifero
+ */
+public class Persona extends Mamifero {
+
+	private String nacionalidad;
+	
+	//constructor de la clase Persona
+	public Persona(String nacionalidad) {
+		
+		//invoca al constructor de la clase mamifero
+		super("pepe", 10.9, 11.0, 11);
+		this.nacionalidad=nacionalidad;
+	}
+	
+
+	
+
+}

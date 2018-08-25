@@ -1,0 +1,11 @@
+package com.utn.modelo;
+
+public class Mamifero {
+
+	private String nombre;
+	private double peso;
+	private double altura;
+	private int edad;
+	
+	
+}

@@ -1,0 +1,19 @@
+package com.utn.vista;
+
+import com.utn.controlador.MamiferoControlador;
+import com.utn.modelo.Mamifero;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		MamiferoControlador mc = new MamiferoControlador();
+		
+		Mamifero m = mc.creoMamifero("perro"); // devuelve un objeto de tipo mamifero instanciado un objeto que extiende dicha clase :) 
+		
+		System.out.println(m.getClass());
+		
+		
+	}
+
+}

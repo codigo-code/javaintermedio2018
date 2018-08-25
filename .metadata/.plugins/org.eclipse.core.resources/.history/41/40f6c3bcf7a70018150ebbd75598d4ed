@@ -1,0 +1,24 @@
+package com.utn.modelo;
+
+public class Vaca extends Mamifero {
+
+	public boolean lechera;
+	
+	public Vaca(String nombre, double peso, double altura, int edad,boolean lechera) {
+		super(nombre, peso, altura, edad);
+		this.lechera=lechera
+	}
+
+	@Override
+	public void comunicarse() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String dormir(double horas) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

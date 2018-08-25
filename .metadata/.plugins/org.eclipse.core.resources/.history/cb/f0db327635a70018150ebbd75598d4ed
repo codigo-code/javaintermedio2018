@@ -1,0 +1,22 @@
+package com.utn.controlador;
+
+import com.utn.modelo.Persona;
+
+public class MamiferoControlador {
+
+	public void creoMamifero() {
+		
+		//Creacion de objetos => instancias
+		
+		//dos conceptos
+		
+		/*
+		 * 1) Crear el objeto directamente por la clase
+		 * que queremos o que vamo a utilizar 
+		 */
+		
+		Persona p1 = new Persona("Joaquin",70.5,1.70,27,"Argentino");
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.utn.modelo;
+
+public class Persona extends Mamifero {
+
+	public Persona(String nombre, 
+					double peso, 
+					double altura, 
+					int edad) {
+		super(nombre, peso, altura, edad);
+		
+	}
+
+	
+
+}

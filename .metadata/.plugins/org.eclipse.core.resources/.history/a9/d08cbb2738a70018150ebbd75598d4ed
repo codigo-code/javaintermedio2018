@@ -1,0 +1,17 @@
+package com.utn.modelo;
+
+public class Perro extends Mamifero {
+
+	@Override
+	public void comunicarse() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String dormir(double horas) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.utn.modelo;
+
+public class Persona extends Mamifero {
+
+	//constructor de la clase Persona
+	public Persona(String nombre, 
+					double peso, 
+					double altura, 
+					int edad) {
+		
+		
+		//invoca al constructor de la clase mamifero
+		super(nombre, peso, altura, edad);
+		
+	}
+
+	
+
+}
