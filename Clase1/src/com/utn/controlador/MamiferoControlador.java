@@ -1,5 +1,7 @@
 package com.utn.controlador;
 
+import java.util.Scanner;
+
 import com.utn.modelo.Caballo;
 import com.utn.modelo.Mamifero;
 import com.utn.modelo.Perro;
@@ -52,29 +54,42 @@ public class MamiferoControlador {
 	// Tenemos que buscar que tienen en comun las clases
 	// En este caso todas extenden de mamifero
 	public Mamifero creoMamifero(String tipo) {
-		Mamifero mami = null;
-		// a partir de un tipo podemos sacar 5 instancias distintas
 
-		// pilar de polimorfismo ( Factoria abstracta)
-		switch (tipo) {
-		case "persona":
-			mami = new Persona("Santiago", 60.0, 1.89, 25, "Colombiano");
-			break;
-		case "perro":
-			mami = new Perro("Bobby", 7.0, 0.50, 6, "Caniche");
-			break;
-		case "caballo":
-			mami = new Caballo("Mr Ed", 100.0, 2.0, 7);
-			break;
-		case "vaca":
-			mami = new Vaca("Lola", 400.0, 1.50, 4, false);
-			break;
-		default:
-			System.out.println("no conozco el tipo por ende la instancia viene vacia!");
-			break;
+		return asignoValores(tipo);
+	}
+
+	private Mamifero asignoValores(String tipo) {
+		Mamifero m = null;
+		Scanner input = new Scanner(System.in);
+		System.out.println("escriba el nombre");
+		String nombre = input.nextLine();
+
+		System.out.println("ingrese el peso");
+		double peso = input.nextDouble();
+
+		System.out.println("ingrese la altura");
+		double altura = input.nextDouble();
+
+		System.out.println("ingrese la edad");
+		int edad = input.nextInt();
+		String nacionalidad = "";
+		String raza = "";
+
+		if (tipo == "persona") {
+			System.out.println("Ingrese la nacionalidad");
+			nacionalidad = input.next();
+			
+			m = new Persona(nombre, peso, altura, edad, nacionalidad);
+		} else if (tipo.equals("perro")) {
+			raza = input.next();
+			m = new Perro(nombre, peso, altura, edad, raza);
+		} else if (tipo.equals("caballo")) {
+			m = new Caballo(nombre, peso, altura, edad);
+		} else {
+			m = new Vaca(nombre, peso, altura, edad, false);
 		}
 
-		return mami;
+		return m;
 	}
 
 }
