@@ -4,10 +4,10 @@ public class Perro extends Mamifero {
 	
 	private String raza;
 
-	public Perro(String nombre, double peso, double altura, int edad) {
-		super(nombre, peso, altura, edad);
-		this.raza=raza;
-	}
+//	public Perro(String nombre, double peso, double altura, int edad) {
+//		super(nombre, peso, altura, edad);
+//		this.raza=raza;
+//	}
 
 	public Perro(String nombre, double peso, double altura, int edad, String raza) {
 		super(nombre, peso, altura, edad);

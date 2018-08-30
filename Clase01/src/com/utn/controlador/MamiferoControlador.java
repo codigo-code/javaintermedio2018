@@ -3,6 +3,7 @@ package com.utn.controlador;
 import java.util.Scanner;
 
 import com.utn.modelo.Caballo;
+import com.utn.modelo.Gato;
 import com.utn.modelo.Mamifero;
 import com.utn.modelo.Perro;
 import com.utn.modelo.Persona;
@@ -46,38 +47,69 @@ public class MamiferoControlador {
 //	
 		//buscar que tienen en comun las clases, en este caso todas extienden de mamifero
 		public Mamifero creoMamifero(String tipo) {
-			Mamifero mami = null;
+			//Mamifero mami = null;
+			//a partir de un tipo podemos sacar 5 instancias diferentes
 			
 			//pilar de polimorfismo (factoria abstracta)
-			switch(tipo.toLowerCase()) {
-			case "persona":
-				mami = new Persona("Santiago",60.0,1.77,25,"Colombiano");
-				break;
-			case "perro":
-				mami = new Perro("boby",7.0,0.5,7,"caniche");
-				break;
-			case "caballo":
-				mami = new Caballo("boby",7.0,0.5,7);
-				break;
-			case "vaca":
-				mami = new Vaca("lola",400.0,1.5,4,false);
-				break;
-			case "gato":
-				mami = new Perro("michi",7.0,0.5,7,"siames");
-				break;
-			default:
-				System.out.println("no conozco el tipo, la instancia va vacia");
-					
-			}
-			return mami;
+//			switch(tipo.toLowerCase()) {
+//			case "persona":
+//				mami = new Persona("Santiago",60.0,1.77,25,"Colombiano");
+//				break;
+//			case "perro":
+//				mami = new Perro("boby",7.0,0.5,7,"caniche");
+//				break;
+//			case "caballo":
+//				mami = new Caballo("boby",7.0,0.5,7);
+//				break;
+//			case "vaca":
+//				mami = new Vaca("lola",400.0,1.5,4,false);
+//				break;
+//			case "gato":
+//				mami = new Perro("michi",7.0,0.5,7,"siames");
+//				break;
+//			default:
+//				System.out.println("no conozco el tipo, la instancia va vacia");
+//					
+//			}
+			return asignoValores(tipo);
 		}
 		
-		private Mamifero asignoValores() { //(String nombre, double peso, double altura, int edad) {
+		//metodo privado que devuelve un objeto como salida
+		private Mamifero asignoValores(String tipo){
+			Mamifero m =null;
 			Scanner input = new Scanner(System.in);
 			System.out.println("escriba el nombre");
 			String nombre = input.nextLine();
 			
-			return null;
+			System.out.println("ingrese peso");
+			double peso = input.nextDouble();
+			
+			System.out.println("ingrese altura");
+			double altura = input.nextDouble();
+			
+			System.out.println("ingrese edad");
+			int edad = input.nextInt();
+			String nacionalidad="";
+			String raza="";
+			if(tipo.equals("persona")) {
+				System.out.println("ingrese nacionalidad");
+				nacionalidad =input.next();
+				m=new Persona(nombre,peso,altura,edad,nacionalidad);
+			}else if(tipo.equals("perro")) {
+				System.out.println("ingrese raza");
+				raza=input.next();
+				m=new Perro(nombre,peso,altura,edad,raza);
+			}else if(tipo.equals("caballo")){
+				m=new Caballo(nombre,peso,altura,edad);
+			}else if(tipo.equals("vaca")){
+				m=new Vaca(nombre,peso,altura,edad,true);
+			}else {
+				System.out.println("ingrese raza");
+				raza=input.next();
+				m=new Gato(nombre,peso,altura,edad,raza);
+			}
+			
+			return m;
 		}
 	}
 

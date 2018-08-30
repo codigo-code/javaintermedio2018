@@ -13,7 +13,7 @@ public class Test {
 		//mc.creoMamifero("gato");//devuelve un objeto instanciado
 		
 		//la variable m es de tipo mamifero pero...
-		Mamifero m = mc.creoMamifero("persona");
+		Mamifero m = mc.creoMamifero("perro");
 		
 		System.out.println(m.getClass().getSimpleName());
 		System.out.println(m.getNombre());
@@ -26,9 +26,14 @@ public class Test {
 			System.out.println(p1.getNacionalidad());
 			
 		}
-		
+		//comparamos si m es de tipo perro 
 		if (m instanceof Perro) {
 			Perro perro1 = (Perro) m;
+			//Asigno el objeto previamente creado sabiendo que es del tipo X a un nuevo objeto/atributo/variable
+			//porque no hacemos el NEW?
+			//RTA: al hacer new se inicializa nuevamente todo el objeto
+			//perro1 = (ClasePerro)m <-- la instancia se copia a la nueva variable
+			//perro1 => es estatic
 			System.out.println(perro1.getRaza());
 			
 		}
