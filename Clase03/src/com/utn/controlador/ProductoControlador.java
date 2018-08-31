@@ -1,7 +1,6 @@
 package com.utn.controlador;
 
 import com.utn.modelo.Camisa;
-import com.utn.modelo.Tipo;
 import com.utn.modelo.Producto;
 
 public class ProductoControlador {
@@ -11,11 +10,10 @@ public class ProductoControlador {
 		Producto p = null; //creamos variable tipo producto la inicializamos a null y 
 		//luego en cada parte del switch le damos la instancia correspondiente
 		
-		switch (tipo) {
-		
+		switch(tipo) {
 		case CAMISA:
-			p = new Camisa();
-			asignoValores(p, marca, talle,precio);
+			return new Camisa(marca,talle,precio);
+		
 		}
 		
 		return p;
