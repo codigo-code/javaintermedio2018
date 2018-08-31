@@ -24,7 +24,7 @@ public class TransporteControlador {
 			break;
 		}
 		
-		System.out.println("Fue creado un " + t.getClass());
+		System.out.println("Fue creado un " + t.getClass().getSimpleName());
 		
 	}
 

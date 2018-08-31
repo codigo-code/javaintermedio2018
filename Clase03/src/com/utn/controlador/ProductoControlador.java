@@ -1,8 +1,10 @@
 package com.utn.controlador;
 
 import com.utn.modelo.Camisa;
-import com.utn.modelo.Tipo;
+import com.utn.modelo.Pantalon;
 import com.utn.modelo.Producto;
+import com.utn.modelo.Zapatilla;
+import com.utn.modelo.Tipo;
 
 public class ProductoControlador {
 	
@@ -12,13 +14,29 @@ public class ProductoControlador {
 		//luego en cada parte del switch le damos la instancia correspondiente
 		
 		switch (tipo) {
-		
 		case CAMISA:
-			p = new Camisa();
-			asignoValores(p, marca, talle,precio);
+			// opcion b
+			return new Camisa(marca, talle, precio);
+		// Opcion A
+		// return asignoValores(p, marca, talle, precio);
+
+		case PANTALON:
+			return new Pantalon(marca, talle, precio);
+		// return asignoValores(p, marca, talle, precio);
+
+		case ZAPATILLA:
+			return new Zapatilla(marca, talle, precio);
+		// return asignoValores(p, marca, talle, precio);
+
+		default:
+			System.out.println("no conozco la prenda");
+			break;
 		}
-		
+
 		return p;
+
+	}
+
 	}
 	
 	//private producto
