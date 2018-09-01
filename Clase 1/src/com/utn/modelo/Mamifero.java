@@ -52,6 +52,9 @@ public abstract class Mamifero {
 	
 	//Metodo abstracto puede llevar los parametros que quieran
 	public abstract String dormir(double horas);
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Mamifero [nombre=" + nombre + ", peso=" + peso + ", altura=" + altura + ", edad=" + edad + "]";

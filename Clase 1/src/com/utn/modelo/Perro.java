@@ -33,7 +33,7 @@ public class Perro extends Mamifero {
 
 	@Override
 	public String toString() {
-		return "Perro [raza=" + raza + "]";
+		return "Mamifero= " +super.toString() + "Perro [ raza=" + raza + "]" ;
 	}
 
 	
