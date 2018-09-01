@@ -3,6 +3,7 @@ package com.utn.vista;
 import java.util.Scanner;
 
 import com.utn.controlador.TransporteControlador;
+import com.utn.modelo.TipoTransporte;
 
 public class Test {
 
@@ -16,18 +17,30 @@ public class Test {
 
 		// creamos las variables que necesitaremos para crear el objeto taxi o colectivo
 
-		System.out.println("Señor/a que va a tomar? ");
-		String tipo = input.nextLine();
+		for (int i = 0; i < 2; i++) {
+			System.out.println("Señor/a que va a tomar? ");
+			String tipo = input.next();
 
-		if (tipo.toLowerCase().equalsIgnoreCase("taxi")) {
+			if (tipo.toLowerCase().equalsIgnoreCase("taxi")) {
+				System.out.println("Taxista ve cuantos monos van a subir");
+				System.out.println("ingrese la cantidad de personas");
+				int cantPasajeros = input.nextInt();
 
-		} else if (tipo.toLowerCase().equals("colectivo")) {
+				System.out.println("Hasta donde va doña!");
+				String recorrido = input.next();
 
-		} else {
-			System.out.println("Disculpe ese  tipo de transporte no lo conozco");
-			return;
+				System.out.println("Soy un tachero muy honesto y te garcho");
+
+				tc.creoTransporte(TipoTransporte.TAXI, 500.0, recorrido, cantPasajeros);
+			} else if (tipo.toLowerCase().equals("colectivo")) {
+
+			} else {
+				System.out.println("Disculpe ese  tipo de transporte no lo conozco");
+				return;
+			}
 		}
 		
+		tc.muestroListaTransporte();
 	}
 
 }
