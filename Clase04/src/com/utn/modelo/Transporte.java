@@ -4,6 +4,7 @@ public abstract class Transporte {
 	private double tarifa;
 	private int cantPasajeros;
 	private String recorrido;
+	
 	public double getTarifa() {
 		return tarifa;
 	}

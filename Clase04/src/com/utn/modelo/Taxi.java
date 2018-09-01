@@ -10,7 +10,7 @@ public class Taxi extends Transporte {
 	@Override
 	public double cobrarYDarVuelto(double dineroRecibido) {
 		// TODO Auto-generated method stub
-		return 0;
+		return dineroRecibido - super.getTarifa();
 	}
 	
 
