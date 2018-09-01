@@ -9,22 +9,31 @@ import com.utn.modelo.Transporte;
 import com.utn.modelo.Vehiculo;
 
 public class TransporteControlador {
-	
+
 	private ArrayList<Transporte> listTrans;
-	
+
 	public TransporteControlador() {
 		this.listTrans = new ArrayList<>();
 	}
-	
+
 	public void creoTransporte(Vehiculo tipo,double tarifa, String recorrido,int cantPasajeros) {
-		
-		
-		
+
+
+
 		Transporte t = null;
 		switch (tipo) {
 		case COLECTIVO:
 			t = new Colectivo(tarifa, cantPasajeros, recorrido);
-			//t.cobrarYDarVuelto(dineroRecibido);
+//			System.out.println("El valor del viaje es $" + t.getTarifa());
+//			Scanner input = new Scanner(System.in);
+//			System.out.println("ingrese recibido");
+//			double dineroRecibido = input.nextDouble();
+//			double res = t.cobrarYDarVuelto(dineroRecibido);
+//			if(res >= 0) {
+//				System.out.println("su vuelto en euros es " + res);
+//			}else {
+//				System.out.println("no le alcanza por pobre!");
+//			}
 			break;
 		case TAXI:
 			t = new Taxi(tarifa, cantPasajeros, recorrido);
@@ -38,11 +47,11 @@ public class TransporteControlador {
 			}else {
 				System.out.println("no le alcanza por pobre!");
 			}
-			
+
 			break;
-			
-			
-			
+
+
+
 		default:
 			System.out.println("No conozo el tipo");
 			break;
@@ -50,7 +59,21 @@ public class TransporteControlador {
 		this.listTrans.add(t);
 		System.out.println("=============================================");
 		System.out.println("Fue creado un " + t.getClass().getSimpleName());
-		
+
 	}
 
+	//ciclamos lista transportes
+	public void muestroListaTrasnporte() {
+		//lambda Java 1.8
+		this.listTrans.forEach(item ->{
+			System.out.println(item.getClass().getSimpleName());
+			System.out.println("Tarifa: " + item.getTarifa() + " , Recorrido: " + item.getRecorrido());
+		});
+
+	}
+	//java 1.7
+	//	for (Transporte item : listTrans) {
+	//		System.out.println(item.getClass().getSimpleName());
+	//		System.out.println("Tarifa: " + item.getTarifa() + " , Recorrido: " + item.getRecorrido());
+	//	}
 }

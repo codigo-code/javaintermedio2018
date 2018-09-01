@@ -10,7 +10,8 @@ public class Colectivo extends Transporte {
 	@Override
 	public double cobrarYDarVuelto(double dineroRecibido) {
 		// TODO Auto-generated method stub
-		return dineroRecibido - super.getTarifa();
+		double precio = super.getCantPasajeros() * super.getTarifa();
+		return dineroRecibido - precio;
 	}
 
 	
