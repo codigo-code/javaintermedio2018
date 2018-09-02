@@ -2,8 +2,8 @@ package com.utn.modelo;
 
 public class Taxi extends Transporte {
 
-	public Taxi(double tarifa, int cantPasajeros, String recorrido) {
-		super(tarifa, cantPasajeros, recorrido);
+	public Taxi(double tarifa, int cantPasajeros, String recorrido,double saldoFinal) {
+		super(tarifa, cantPasajeros, recorrido,saldoFinal);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -12,6 +12,10 @@ public class Taxi extends Transporte {
 		// TODO Auto-generated method stub
 		return dineroRecibido - super.getTarifa();
 	}
-	
 
+	@Override
+	public double calcularSube(double saldoSube) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
