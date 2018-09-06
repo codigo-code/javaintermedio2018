@@ -2,8 +2,21 @@ package com.utn.modelo;
 
 public class Colectivo extends Transporte {
 
+	private double tarifa;
+	
+	
+	
+	public double getTarifa() {
+		return tarifa;
+	}
+
+	public void setTarifa(double tarifa) {
+		this.tarifa = tarifa;
+	}
+
 	public Colectivo(double tarifa, int cantPasajeros, String recorrido,double precio, double saldoFinal) {
-		super(tarifa, cantPasajeros, recorrido,saldoFinal);
+		super(cantPasajeros, recorrido,saldoFinal);
+		this.tarifa = tarifa;
 		// TODO Auto-generated constructor stub
 	}
 		
@@ -16,7 +29,7 @@ public class Colectivo extends Transporte {
 
 	@Override
 	public double calcularSube(double saldoSube) {
-		return saldoSube - (super.getCantPasajeros()*super.getTarifa());
+		return saldoSube - (super.getCantPasajeros()*this.getTarifa());
 	}
 
 	

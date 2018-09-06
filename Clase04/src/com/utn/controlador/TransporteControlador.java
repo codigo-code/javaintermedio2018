@@ -24,7 +24,7 @@ public class TransporteControlador {
 		switch (tipo) {
 		case COLECTIVO:
 			t = new Colectivo(tarifa, cantPasajeros, recorrido, tarifa,saldoFinal);
-			System.out.println("El valor del viaje es $" + t.getTarifa() + " por " + t.getCantPasajeros() + " pasajeros." );
+			System.out.println("El valor del viaje es $" + ((Colectivo)t).getTarifa() + " por " + t.getCantPasajeros() + " pasajeros." );
 			
 			System.out.println("ingrese saldo en sube");
 			double saldoSube = input.nextDouble();
@@ -39,7 +39,7 @@ public class TransporteControlador {
 			
 		case TAXI:
 			t = new Taxi(tarifa, cantPasajeros, recorrido,0);//tuve que poner 0 o la variable saldoFinal para que ande
-			System.out.println("El valor del viaje es $" + t.getTarifa());
+			System.out.println("El valor del viaje es $" +  ((Taxi)t).getTarifa());
 			//Scanner input = new Scanner(System.in);
 			System.out.println("ingrese recibido");
 			double dineroRecibido = input.nextDouble();
@@ -69,7 +69,11 @@ public class TransporteControlador {
 		//lambda Java 1.8
 		this.listTrans.forEach(item ->{
 			System.out.println(item.getClass().getSimpleName());
-			System.out.println("Tarifa: " + item.getTarifa() + " , Recorrido: " + item.getRecorrido());
+			if (item instanceof Colectivo) {
+				Colectivo itemColectivo = (Colectivo) item;
+				System.out.println("Tarifa: " + itemColectivo.getTarifa() + " , Recorrido: " + item.getRecorrido());				
+			}
+
 		});
 
 	}
