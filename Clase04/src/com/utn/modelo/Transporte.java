@@ -1,14 +1,10 @@
 package com.utn.modelo;
 
 public abstract class Transporte {
-	private double tarifa;
 	private int cantPasajeros;
 	private String recorrido;
 	private double saldoFinal;
 	
-	public double getTarifa() {
-		return tarifa;
-	}
 	public int getCantPasajeros() {
 		return cantPasajeros;
 	}
@@ -18,9 +14,8 @@ public abstract class Transporte {
 	public double getSaldoFinal() {
 		return saldoFinal;
 	}
-	public Transporte(double tarifa, int cantPasajeros, String recorrido,double saldoFinal) {
+	public Transporte(int cantPasajeros, String recorrido,double saldoFinal) {
 		super();
-		this.tarifa = tarifa;
 		this.cantPasajeros = cantPasajeros;
 		this.recorrido = recorrido;
 		this.saldoFinal = saldoFinal;
