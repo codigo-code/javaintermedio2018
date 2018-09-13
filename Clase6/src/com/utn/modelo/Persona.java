@@ -10,11 +10,13 @@ public class Persona {
 	public String getNombre() {
 		return nombre;
 	}
+	
 //	public void setNombre(final String nombre) {
 //		//aca es cuando el valor se cambiaria
-////		nombre = "pedo"
+// 		nombre = "pedo"
 //		this.nombre = nombre;
 //	}
+	
 	public int getDni() {
 		return dni;
 	}
