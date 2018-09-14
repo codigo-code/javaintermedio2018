@@ -5,8 +5,8 @@ import com.utn.modelo.Pelicula;
 
 public class DVD extends Pelicula {
 
-	public DVD(String nombre, Genero genero, double precio, String desde, String hasta) {
-		super(nombre, genero, precio, desde, hasta);
+	public DVD(String nombre, Genero genero, double precio) {
+		super(nombre, genero, precio);
 		// TODO Auto-generated constructor stub
 	}
 

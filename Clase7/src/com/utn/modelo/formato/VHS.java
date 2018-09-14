@@ -5,15 +5,15 @@ import com.utn.modelo.Pelicula;
 
 public class VHS extends Pelicula {
 
-	public VHS(String nombre, Genero genero, double precio, String desde, String hasta) {
-		super(nombre, genero, precio, desde, hasta);
+	public VHS(String nombre, Genero genero, double precio) {
+		super(nombre, genero, precio);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String tipoFormato() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Pla-B ";
 	}
 
 }

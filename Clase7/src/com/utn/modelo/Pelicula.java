@@ -20,11 +20,9 @@ public abstract class Pelicula {
 		this.nombre = nombre;
 	}
 
-	public Pelicula(String nombre, Genero genero, double precio, String desde, String hasta) {
+	public Pelicula(String nombre, Genero genero, double precio) {
 		this.genero = genero;
 		this.precio = precio;
-		this.desde = desde;
-		this.hasta = hasta;
 		this.nombre=nombre;
 		//inicializo la lista por cada objeto de tipo pelicula que se crea
 		this.listaActores= new ArrayList<Actor>();
