@@ -7,18 +7,14 @@ public abstract class Pelicula {
 	private ArrayList<Actor> listaActores;
 	private Genero genero;
 	private double precio;
-	private String desde;
-	private String hasta;
 	private String nombre;
 	
 	
 	
 	
-	public Pelicula(Genero genero, double precio, String desde, String hasta, String nombre) {
+	public Pelicula(String nombre,Genero genero, double precio) {
 		this.genero = genero;
 		this.precio = precio;
-		this.desde = desde;
-		this.hasta = hasta;
 		this.nombre = nombre;
 		
 		//inicializo la lista por cada objeto de tipo pelicula que se crea
@@ -75,38 +71,6 @@ public abstract class Pelicula {
 
 	public void setPrecio(double precio) {
 		this.precio = precio;
-	}
-
-
-
-
-
-	public String getDesde() {
-		return desde;
-	}
-
-
-
-
-
-	public void setDesde(String desde) {
-		this.desde = desde;
-	}
-
-
-
-
-
-	public String getHasta() {
-		return hasta;
-	}
-
-
-
-
-
-	public void setHasta(String hasta) {
-		this.hasta = hasta;
 	}
 
 
