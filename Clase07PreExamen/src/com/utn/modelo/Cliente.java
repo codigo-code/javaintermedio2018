@@ -28,11 +28,13 @@ public class Cliente {
 		}
 	}
 
-	public Cliente(ArrayList<Pelicula> listaPelisAlquiladas, String nombre, String mail, double dinero) {
-		this.listaPelisAlquiladas = new ArrayList<Pelicula>();
+	public Cliente(String nombre, String mail, double dinero) {
+		//ArrayList<Pelicula> listaPelisAlquiladas, 
+		
 		this.nombre = nombre;
 		this.mail = mail;
 		this.dinero = dinero;
+		this.listaPelisAlquiladas = new ArrayList<Pelicula>();
 	}
 
 	public String getNombre() {
@@ -62,6 +64,14 @@ public class Cliente {
 	public ArrayList<Pelicula> getListaPelisAlquiladas() {
 		return listaPelisAlquiladas;
 	}
+
+//	public Cliente(ArrayList<Pelicula> listaPelisAlquiladas, String nombre, String mail, double dinero) {
+//		super();
+//		this.listaPelisAlquiladas = listaPelisAlquiladas;
+//		this.nombre = nombre;
+//		this.mail = mail;
+//		this.dinero = dinero;
+//	}
 	
 
 }

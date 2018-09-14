@@ -52,9 +52,14 @@ public class PeliculaControlador {
 		}
 		System.out.println("=================================================================");
 		//lambda solo para java 8
-		this.listaPeliculas
-		
-		
+		this.listaPeliculas.forEach(item -> {System.out.println("Genero: " + item.getGenero() + "Nombre: " + item.getNombre());});
 	}
+	public ArrayList<Pelicula> devuelvoListaPeliculas(){
+		return this.listaPeliculas;
+				
+	}
+		
+		
+
 
 }

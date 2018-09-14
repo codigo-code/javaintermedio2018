@@ -6,7 +6,7 @@ import com.utn.modelo.Pelicula;
 public class VHS extends Pelicula {
 
 	public VHS(String nombre, Genero genero, int precio) {
-		super(nombre,precio, genero);
+		super(nombre, genero,precio);
 		// TODO Auto-generated constructor stub
 	}
 

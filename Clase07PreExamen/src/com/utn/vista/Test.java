@@ -1,6 +1,7 @@
 package com.utn.vista;
 
 import com.utn.controlador.ClienteControlador;
+import com.utn.controlador.PeliculaControlador;
 
 public class Test {
 
@@ -8,6 +9,9 @@ public class Test {
 	
 		ClienteControlador cc = new ClienteControlador();
 		cc.alquiloPelicula();
+		
+		PeliculaControlador pc = new PeliculaControlador();
+		pc.muestroReportePelicula();
 
 	
 	}

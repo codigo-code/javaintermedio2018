@@ -5,7 +5,7 @@ import com.utn.modelo.Pelicula;
 
 public class BlueRay extends Pelicula {
 
-	public BlueRay(Genero genero, double precio, String nombre) {
+	public BlueRay(String nombre,Genero genero, double precio) {
 		super(nombre,genero, precio);
 		// TODO Auto-generated constructor stub
 	}
