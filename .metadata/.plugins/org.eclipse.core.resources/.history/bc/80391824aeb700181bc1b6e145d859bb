@@ -1,0 +1,14 @@
+package com.utn.modelo;
+
+import java.util.ArrayList;
+
+public class Cliente {
+	
+	private ArrayList<lista> listaPelis;
+	private String nombre;
+	private int numero;
+	private int tiempo;
+	private int cliente;
+	
+
+}

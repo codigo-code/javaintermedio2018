@@ -1,0 +1,13 @@
+package com.utn.modelo;
+
+public class Pedido {
+	
+	private String cono;
+	private String cuarto;
+	private String kilo;
+
+	public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

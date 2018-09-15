@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.utn.modelo.Perro"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Vehiculo"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Transporte"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Colectivo"/>
+<fullyQualifiedTypeName name="com.utn.modelo.TipoPersona"/>
+<fullyQualifiedTypeName name="com.utn.modelo.HinchaFutbol"/>
+<fullyQualifiedTypeName name="com.utn.modelo.formato.DVD"/>
+<fullyQualifiedTypeName name="com.utn.modelo.Genero"/>
+<fullyQualifiedTypeName name="com.utn.controlador.ClienteControlador"/>
+</qualifiedTypeNameHistroy>

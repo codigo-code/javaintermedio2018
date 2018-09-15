@@ -1,0 +1,19 @@
+package com.utn.controlador;
+
+public class HeladeriaControlador {
+
+	public HeladeriaControlador() {
+		if(pedido = cono){
+			System.out.println("Elija 2 gustos");
+		
+		}else if(pedido = cuarto){
+			System.out.println("Elija 3 gustos");
+			
+		}else {
+			System.out.println("Elija 4 gustos");
+		}
+	c1 = new caja;
+	
+	}
+
+}

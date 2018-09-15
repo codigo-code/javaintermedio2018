@@ -1,0 +1,14 @@
+package com.utn.controlador;
+
+public class ClienteControlador {
+
+	private PeliculaControlador{
+		private PeliculaControlador = pc;
+	}
+	public ClienteControlador() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void alquiloPelicula() {}
+
+}

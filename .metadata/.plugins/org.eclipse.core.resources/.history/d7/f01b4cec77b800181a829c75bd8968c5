@@ -1,0 +1,10 @@
+package com.utn.modelo;
+
+public interface IEmpleado {
+	
+	public int pedidosxDia;
+	public String nombre;
+
+	int cantPedidos();
+	
+}

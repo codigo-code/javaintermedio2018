@@ -1,0 +1,9 @@
+package com.utn.modelo;
+
+public class Cajero {
+
+	public Cajero() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

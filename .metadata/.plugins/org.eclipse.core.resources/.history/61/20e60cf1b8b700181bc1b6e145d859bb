@@ -1,0 +1,20 @@
+package com.utn.controlador;
+
+import com.utn.modelo.Cliente;
+
+public class ClienteControlador {
+
+	private PeliculaControlador{
+		private PeliculaControlador pc;
+	}
+	public ClienteControlador() {
+		this.pc = new PeliculaControlador();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void alquiloPelicula() {
+		System.out.println("Quiero una de accion");
+		Cliente c1 = new Cliente("Felipe","felipe@mail.com", 60.0)
+	}
+
+}

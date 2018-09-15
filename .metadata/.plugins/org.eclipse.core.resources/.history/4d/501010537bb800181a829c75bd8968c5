@@ -1,0 +1,11 @@
+package com.utn.controlador;
+
+public class HeladeriaControlador {
+
+	public HeladeriaControlador() {
+		if(pedido = cono){
+			System.out.println("Elija 2 gustos");
+		}
+	}
+
+}

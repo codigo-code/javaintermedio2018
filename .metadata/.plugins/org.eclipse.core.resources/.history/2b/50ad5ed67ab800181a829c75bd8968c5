@@ -1,0 +1,15 @@
+package com.utn.modelo;
+
+public class Heladero implements IEmpleado {
+
+	public Heladero() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void cantPedidos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

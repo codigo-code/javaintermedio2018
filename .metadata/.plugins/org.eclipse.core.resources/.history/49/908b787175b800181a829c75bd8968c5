@@ -1,0 +1,8 @@
+package com.utn.modelo;
+
+public enum Plus {
+	CONO,
+	CUARTO,
+	KILO
+
+}

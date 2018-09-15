@@ -1,0 +1,14 @@
+package com.utn.modelo;
+
+public interface IPedido {
+
+	private String gusto1;
+	private String gusto2;
+	private String gusto3;
+	private String gusto4;
+
+	public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

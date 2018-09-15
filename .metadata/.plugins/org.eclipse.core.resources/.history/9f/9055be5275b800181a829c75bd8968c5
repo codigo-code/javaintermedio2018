@@ -1,0 +1,8 @@
+package com.utn.modelo;
+
+public enum TipoPedido {
+	CONO,
+	CUARTO,
+	KILO
+
+}

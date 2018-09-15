@@ -1,0 +1,9 @@
+package com.utn.modelo;
+
+public class Heladero {
+
+	public Heladero() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

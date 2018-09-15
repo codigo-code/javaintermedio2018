@@ -1,0 +1,30 @@
+package com.utn.vista;
+
+public class Test {
+
+	public static void main(String[] args) {
+		//creo un objeto de tipo persona
+		
+		
+		/*
+		 * Mutabilidad en inmutabilidad
+		 * Teoria
+		 * la mutabilidad es un x-men
+		 * una variable que se iniciliza de una forma y por x razon
+		 * cambia su valor
+		 * 
+		 */
+		
+		final String danielPoder = "Ciclope";
+		
+		System.out.println(danielPoder);
+
+		//danielPoder = "pus por los ojos";
+		//System.out.println("MUTO");
+		System.out.println(danielPoder);
+		
+		//ejemplo con objetos inmutables
+		final Persona p1 = new Persona("David", 12345);
+	}
+
+}

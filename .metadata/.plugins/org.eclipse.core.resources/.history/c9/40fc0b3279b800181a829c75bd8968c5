@@ -1,0 +1,12 @@
+package com.utn.modelo;
+
+public class Cajero {
+	private int cantPedidos;
+	
+	public Cajero() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+}

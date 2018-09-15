@@ -1,0 +1,12 @@
+package com.utn.modelo;
+
+public class Caja {
+	private int pedidosxDia;
+	private String cajero;
+	
+	
+	public Caja() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

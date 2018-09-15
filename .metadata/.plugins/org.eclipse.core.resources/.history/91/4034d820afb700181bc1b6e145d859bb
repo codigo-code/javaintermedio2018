@@ -1,0 +1,9 @@
+package com.utn.controlador;
+
+public class PeliculaControlador {
+
+	public PeliculaControlador() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

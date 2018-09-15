@@ -1,0 +1,37 @@
+package com.utn.modelo;
+
+public class Pedido {
+	
+	public String getCono() {
+		return cono;
+	}
+
+	public void setCono(String cono) {
+		this.cono = cono;
+	}
+
+	public String getCuarto() {
+		return cuarto;
+	}
+
+	public void setCuarto(String cuarto) {
+		this.cuarto = cuarto;
+	}
+
+	public String getKilo() {
+		return kilo;
+	}
+
+	public void setKilo(String kilo) {
+		this.kilo = kilo;
+	}
+
+	private String cono;
+	private String cuarto;
+	private String kilo;
+
+	public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

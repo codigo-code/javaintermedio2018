@@ -1,0 +1,17 @@
+package com.utn.modelo;
+
+import java.util.ArrayList;
+
+public abstract class Pelicula {
+	
+	private ArrayList<Actor> listaActores;
+	private Genero genero;
+	private double precio;
+	private String desde;
+	private String hasta;
+	
+	
+	//metodo abstracto
+	public abstract String tipoFormato();
+
+}

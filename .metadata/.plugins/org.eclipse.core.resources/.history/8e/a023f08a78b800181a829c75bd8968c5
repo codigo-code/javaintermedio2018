@@ -1,0 +1,9 @@
+package com.utn.modelo;
+
+public class Cajero implements IEmpleado {
+
+	public Cajero() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

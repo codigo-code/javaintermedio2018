@@ -1,0 +1,9 @@
+package com.utn.controlador;
+
+public class HeladeriaControlador {
+
+	public HeladeriaControlador() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

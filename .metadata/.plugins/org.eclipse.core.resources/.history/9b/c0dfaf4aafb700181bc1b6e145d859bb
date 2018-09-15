@@ -1,0 +1,16 @@
+package com.utn.controlador;
+
+import java.util.ArrayList;
+
+import com.utn.modelo.Pelicula;
+
+public class PeliculaControlador {
+	
+	private ArrayList<Pelicula> listaPeliculas;
+
+	public PeliculaControlador() {
+		// TODO Auto-generated constructor stub
+		this.listaPeliculas = new ArrayList<Pelicula>();
+	}
+
+}
