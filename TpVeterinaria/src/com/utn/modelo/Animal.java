@@ -1,12 +1,15 @@
 package com.utn.modelo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Animal {
+public abstract class Animal {
 	private Tipo tipo;
 	private String raza;
 	private int edad;
 	private String causaAtencion;
+	
+	
 	public Tipo getTipo() {
 		return tipo;
 	}
@@ -38,17 +41,23 @@ public class Animal {
 		this.causaAtencion = causaAtencion;
 	}
 
-	public void ingresarAnimal() {
-		Scanner input = new Scanner(System.in);
-		System.out.println("Ingrese tipo de animal");
-		String tipo = input.next();
+	public abstract void ingresarAnimal();
+	
+		/*{
+		 * Scanner input = new Scanner(System.in);
+		System.out.println("Ingrese tipo de animal clase");
+		//this.tipo = input.next();
+//		String tipo = input.next();
 		System.out.println("Ingrese raza");
-		String raza = input.next();
+		this.raza = input.nextLine();
+//		String raza = input.next();
 		System.out.println("Ingrese edad");
-		int edad = input.nextInt();
+		this.edad = input.nextInt();
+//		int edad = input.nextInt();
 		System.out.println("Ingrese causa de atencion");
-		String causaAtencion = input.next();
+		this.causaAtencion = input.next();
+		//String causaAtencion = input.next();
 		
-	}
+	}*/
 	
 }
