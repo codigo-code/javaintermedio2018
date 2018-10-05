@@ -1,4 +1,6 @@
 package com.utn.modelo;
+import com.utn.modelo.Animal;
+import com.utn.modelo.Tipo;
 
 public class Conejo extends Animal {
 	

@@ -13,14 +13,14 @@ public class AnimalControlador {
 	
 	public AnimalControlador() {
 		this.listaAnimales = new ArrayList<>();
-	
-	}
+		}
 	
 	public void crearAnimal(Tipo tipo, String raza, int edad,String causaAtencion) {
-		Scanner input = new Scanner(System.in);
-		Animal a = null;
+		//Scanner input = new Scanner(System.in);//
+		Animal a = new Conejo(tipo, raza,edad,causaAtencion);
 		
-		switch(tipo) {
+		
+		/*switch(tipo) {
 		case CONEJO:
 			a = new Conejo(tipo, raza,edad,causaAtencion);
 			//tengo un metodo en la clase Animal para crear animales pero no pude meterlo aca para que funcione el switch
@@ -37,15 +37,15 @@ public class AnimalControlador {
 		default:
 			System.out.println("No atendemos ese animal");
 			break;
-		}
+		}*/
 		this.listaAnimales.add(a);
-		System.out.println("=============================================");
+		//System.out.println("=============================================");
 	}
 	
 	
 	public void muestroListaAnimales() {
 		this.listaAnimales.forEach(item ->{
-			System.out.println(item.getClass().getSimpleName());
+			//System.out.println(item.getClass().getSimpleName());
 			if (item instanceof Conejo) {
 				Conejo itemConejo = (Conejo) item;
 				System.out.println("Tipo animal: " + itemConejo.getTipo() + " , Raza: " + item.getRaza() + " Edad: "
