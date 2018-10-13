@@ -1,0 +1,19 @@
+package com.utn.modelo;
+
+public enum Ingredientes {
+	ACIDO_CITRICO,
+	CAFEINA,
+	AZUCAR,
+	AGUA,
+	JUGO_LIMON,
+	VAINILLA,
+	CARAMELO,
+	ALCOHOL,
+	ACEITE,
+	NUEZ_MOSCADA,
+	CILANTRO,
+	NEROLI,
+	CANELA
+	
+
+}
