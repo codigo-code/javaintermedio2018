@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.utn.controlador.BebidaControlador;
 import com.utn.controlador.PedidoControlador;
+import com.utn.modelo.Variedades;
 
 public class Test {
 
@@ -14,11 +15,11 @@ public class Test {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Igrese bebida a preparar");
-		String sabor = input.next();
-		bc.prepararBebida(sabor);
+		String gustote = input.next();
+		bc.prepararBebida(gustote);
 		
 		
-		pc.hacerPedido(null);//este null rompe 
+		pc.hacerPedido();//este null rompe 
 		
 	}
 

@@ -1,28 +1,53 @@
 package com.utn.modelo;
 
 public class Pedido {
-	private int conAlcohol;
-	private int sinAlcohol;
+	private String tipo;
+	private double conAlcohol;
+	private double sinAlcohol;
 	
 	public Pedido() {
 		
 	}
 	
-	public Pedido(int conAlcohol, int sinAlcohol) {
-		super();
-		this.conAlcohol = conAlcohol;
-		this.sinAlcohol = sinAlcohol;
-	}
-	public int getConAlcohol() {
+	
+	public double getConAlcohol() {
 		return conAlcohol;
 	}
 	public void setConAlcohol(int conAlcohol) {
 		this.conAlcohol = conAlcohol;
 	}
-	public int getSinAlcohol() {
+	public Pedido(String tipo, double conAlcohol, double sinAlcohol) {
+		super();
+		this.tipo = tipo;
+		this.conAlcohol = conAlcohol;
+		this.sinAlcohol = sinAlcohol;
+	}
+
+
+	public double getSinAlcohol() {
 		return sinAlcohol;
 	}
 	public void setSinAlcohol(int sinAlcohol) {
+		this.sinAlcohol = sinAlcohol;
+	}
+
+
+	public String getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+
+	public void setConAlcohol(double conAlcohol) {
+		this.conAlcohol = conAlcohol;
+	}
+
+
+	public void setSinAlcohol(double sinAlcohol) {
 		this.sinAlcohol = sinAlcohol;
 	}
 	

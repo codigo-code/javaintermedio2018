@@ -1,29 +1,15 @@
 package com.utn.modelo;
 
-public class Sabor extends Bebida {
-	
-	private Variedades sabor;
-	private Fernet fernet;
-	
+public class Manzana extends Bebida {
 
-	
-	public Sabor(Variedades variedades) {
-		this.sabor = variedades;
-	}
-	
-	
-	
-	public Variedades getSabor() {
-		return sabor;
+	public Manzana() {
+		// TODO Auto-generated constructor stub
 	}
 
-
-
-	public void setSabor(Variedades gusto) {
-		this.sabor = gusto;
+	public Manzana(Sabor sabor) {
+		super(sabor);
+		// TODO Auto-generated constructor stub
 	}
-
-
 
 	@Override
 	public void agregarBicarbonato() {
@@ -48,10 +34,5 @@ public class Sabor extends Bebida {
 		// TODO Auto-generated method stub
 
 	}
-	
-	public void inyectarAlcohol() {
-		
-	}
-	
 
 }

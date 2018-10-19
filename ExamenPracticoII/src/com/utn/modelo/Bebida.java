@@ -2,6 +2,7 @@ package com.utn.modelo;
 
 public abstract class Bebida {
 	private Sabor sabor;
+	private String gustito;
 	
 	public Bebida() {
 		
